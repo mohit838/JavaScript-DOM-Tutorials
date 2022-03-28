@@ -21,3 +21,18 @@ const setGreenColor = document.getElementById("setGreen");
 setGreenColor.onclick = function () {
     document.body.style.backgroundColor = "Seagreen";
 };
+
+//Set Pink
+const setPinkColor = document.getElementById("setpink");
+setPinkColor.addEventListener("click", setPinkColorUsingFn);
+
+function setPinkColorUsingFn(){
+    document.body.style.backgroundColor = "Pink";
+}
+
+//Set Dark Golden Rod Color
+const setDGRodColor = document.getElementById("setDarkGoldenRod");
+setDGRodColor.addEventListener("click", ()=>{
+    document.body.style.backgroundColor = "Darkgoldenrod";
+});
+
