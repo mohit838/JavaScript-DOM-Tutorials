@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Comment</title>
+    <style></style>
+  </head>
+  <body>
+    <h1 style="text-align: center">All Comments</h1>
+    <section>
+      <div id="all__comments">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
+          recusandae inventore? Dicta, est? Fugiat ut, aliquid recusandae illum
+          consequuntur placeat porro. Ut mollitia animi non, at excepturi enim
+          rerum vitae.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores,
+          recusandae inventore? Dicta, est? Fugiat ut, aliquid recusandae illum
+          consequuntur placeat porro. Ut mollitia animi non, at excepturi enim
+          rerum vitae.
+        </p>
+      </div>
+      <div class="add__new__comment">
+        <textarea
+          name="newtext"
+          id="new__comment"
+          cols="40"
+          rows="10"
+          placeholder="Write your comment here to add...."
+        ></textarea>
+        <br />
+        <button type="submit" id="comment__post">Post</button>
+      </div>
+    </section>
+    <script>
+      const postComment = document
+        .getElementById("comment__post")
+        .addEventListener("click", () => {
+          const getText = document.getElementById("new__comment");
+          const createPara = document.createElement("p");
+          createPara.innerText = getText.value;
+          const getAllComment = document.getElementById("all__comments");
+          getAllComment.appendChild(createPara);
+        });
+    </script>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 ## Basic JavaScript DOM Tutorials
 
-<ul>
+<ol>
 <li>How to get any TAG, ID, CLASSNAME, QUARIES AND setATTRIBUTE.</li>
 <li>EventHandler various ways.</li>
-</ul>
+<li>Simple comment post box.</li>
+</ol>
