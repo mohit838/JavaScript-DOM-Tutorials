@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- StyleSheet -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Roboto", sans-serif;
+      }
+
+      .container {
+        width: 100%;
+      }
+
+      .article {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+      }
+    </style>
+    <title>JavaScrip DOM</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1 style="text-align: center">JavaScrip DOM Manipulation Technique</h1>
+
+      <div class="article">
+        <h2 id="article__head">Para 1</h2>
+        <p id="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+          veritatis rem. Laudantium veritatis voluptatum consequuntur
+          praesentium animi eveniet voluptatem porro. Sequi eius officiis
+          consequatur necessitatibus molestiae odit blanditiis dolore, neque non
+          commodi veritatis consectetur quibusdam voluptas soluta voluptatem
+          maxime nam.
+        </p>
+      </div>
+      <div class="article">
+        <h2 id="article__head">Para 2</h2>
+        <p id="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+          veritatis rem. Laudantium veritatis voluptatum consequuntur
+          praesentium animi eveniet voluptatem porro. Sequi eius officiis
+          consequatur necessitatibus molestiae odit blanditiis dolore, neque non
+          commodi veritatis consectetur quibusdam voluptas soluta voluptatem
+          maxime nam.
+        </p>
+      </div>
+      <div class="article">
+        <h2 id="article__head">Para 3</h2>
+        <p id="para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+          veritatis rem. Laudantium veritatis voluptatum consequuntur
+          praesentium animi eveniet voluptatem porro. Sequi eius officiis
+          consequatur necessitatibus molestiae odit blanditiis dolore, neque non
+          commodi veritatis consectetur quibusdam voluptas soluta voluptatem
+          maxime nam.
+        </p>
+      </div>
+      <!-- Here entered new {div>h2>p} using Js Dom -->
+    </div>
+    <!-- JS file -->
+    <!-- <script src="index.js"></script> -->
+    <script>
+      const parentDiv = document.getElementById("container");
+
+      // 1. Create Element
+      const createDiv = document.createElement("div");
+
+      let parentStyle = parentDiv.appendChild(createDiv);
+      parentStyle.style.margin = "10px";
+      parentStyle.style.padding = "10px";
+      parentStyle.style.border = "2px solid black";
+      parentStyle.style.borderRadius = "5px";
+
+      //2. Set attribute
+      // const createDivAtt = document.createAttribute("class");
+
+      //3. set attribute value
+      // createDivAtt.value = "article";
+      // console.log(createDiv);
+
+      const createHead = document.createElement("h2");
+      // const createHeadAtt = document.createAttribute("id");
+      // createHeadAtt.value = "article__head";
+      createHead.innerText = "Para 4";
+      // console.log(createHead);
+
+      //4. Append h2 into div
+      createDiv.appendChild(createHead);
+      // console.log(createDiv.appendChild(createHead));
+
+      const createPara = document.createElement("p");
+      createPara.innerText =
+        "Laudantium veritatis voluptatum consequuntur praesentium animi eveniet voluptatem porro. Sequi eius officiis consequatur necessitatibus molestiae odit blanditiis dolore, neque non commodi veritatis consectetur quibusdam voluptas soluta voluptatem maxime nam.";
+
+      // console.log(createPara);
+      //5. Append p into h2
+      createDiv.appendChild(createPara);
+      // console.log(createDiv.appendChild(createPara));
+    </script>
+  </body>
+</html>

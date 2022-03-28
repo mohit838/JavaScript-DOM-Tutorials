@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="style.css" />
+    <title>JavaScrip DOM addEventListener</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center">Color Switcher</h1>
+
+      <div>
+        <!-- 1. First Way -->
+        <button onclick="document.body.style.backgroundColor='Yellow'">
+          Yellow
+        </button>
+        <!-- 1. Second Way -->
+        <button onclick="setBlue()">Blue</button>
+        <button id="setBlack">Black</button>
+        <button id="setGreen">SeaGreen</button>
+        <button>Pink</button>
+        <button>Dark Golden Rod</button>
+      </div>
+    </div>
+    <!-- JS Script -->
+    <script src="event.js"></script>
+    <script>
+      //Only Testing Purpose
+    </script>
+  </body>
+</html>
