@@ -35,7 +35,7 @@ inputArea.addEventListener('keyup', (event)=>{
     // const deleteField = inputArea.value;
     // console.log(deleteField);
     // console.log(event);
-    if(event.target.value == 'delete'){
+    if(event.target.value == 'delete' || event.target.value == 'DELETE'){
         deleteComment.removeAttribute('disabled');
     }
     else{

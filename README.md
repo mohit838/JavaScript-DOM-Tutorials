@@ -5,4 +5,6 @@
 <li>EventHandler various ways.</li>
 <li>Simple comment post box.</li>
 <li>More eventHandler Like KeyUp, Blur, Change, Focus etc.</li>
+<li>Event Bubble</li>
+<li>Event Delegate</li>
 </ol>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubble</title>
+  </head>
+  <body>
+    <h2 style="text-align: center; font: 2rem sans-serif">Event Bubble</h2>
+
+    <!-- Shortcut: ul#list__item>li.item*6>lorem3 -->
+    <ul style="font-size: 2rem" id="list__item">
+      <li class="item">Lorem, ipsum dolor.</li>
+      <li class="item" id="second__item">Iste, nisi. Illo?</li>
+      <li class="item">Repellendus, non dolorem?</li>
+      <li class="item">Maxime, ex quisquam?</li>
+      <li class="item">Reprehenderit, eos minus.</li>
+      <li class="item">Nisi, fugit quas!</li>
+    </ul>
+    <script>
+      // const item = document.getElementById("second__item");
+      // item.addEventListener("click", (event) => {
+      //   console.log("clicked second!!");
+      //   event.stopPropagation();
+      // });
+
+      //Stop Event Bubble
+      const item = document.getElementById("second__item");
+      item.addEventListener("click", (event) => {
+        console.log("clicked second!!");
+        event.stopPropagation();
+      });
+
+      const ul__item = document.getElementById("list__item");
+      ul__item.addEventListener("click", () => {
+        console.log("UL clicked!!");
+      });
+    </script>
+  </body>
+</html>
