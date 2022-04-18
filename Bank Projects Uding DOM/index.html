@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Projects Using DOM</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1 class="text-6xl font-bold text-center mt-5">
+      Bank Project Using
+      <span class="text-sky-600">DOM</span>
+    </h1>
+    <section class="user__page w-1/2 mx-auto bg-gray-300">
+      <div class="login text-center">
+        <h2 class="text-3xl font-semibold m-5">Please Login</h2>
+
+        <div>
+          <input
+            id="userEmailField"
+            class="block border-2 border-gray-400 rounded-sm px-2"
+            type="text"
+            placeholder="Email"
+            id="email__field"
+          />
+          <input
+            id="userPassField"
+            class="border-2 border-gray-400 rounded-sm mt-3 px-2"
+            type="password"
+            placeholder="Password"
+            id="pass__field"
+          />
+        </div>
+        <button
+          id="logInBtn"
+          type="submit"
+          class="bg-yellow-400 px-4 py-2 rounded mt-5 mb-5 font-medium"
+        >
+          LogIn
+        </button>
+      </div>
+    </section>
+    <script src="active.js"></script>
+  </body>
+</html>

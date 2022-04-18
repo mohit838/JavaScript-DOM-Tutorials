@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+.user__page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 150px;
+}
+
+/* .login {
+  padding: 50px;
+  box-shadow: 3px 5px rgb(0, 0, 0, 0.2);
+}
+
+.userField {
+  margin-top: 15px;
+}
+
+.btn {
+  padding: 20px 0;
+  margin: 20px 0;
+  color: tomato;
+} */

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accounts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-6xl font-bold text-center m-5">
+        Bank Project Using
+        <span class="text-sky-600">DOM</span>
+      </h1>
+      <h1 class="text-5xl font-semibold mt-5 text-center">Account Page</h1>
+    </header>
+    <main>
+      <div class="grid grid-cols-3 gap-4 mt-5 w-3/4 mx-auto">
+        <div class="bg-blue-400 p-10 rounded mt-10">
+          <h1 class="text-3xl font-bold mb-5">Deposite</h1>
+          <h2 class="text-3xl">$<span id="depoAmount">0</span></h2>
+        </div>
+        <div class="bg-orange-500 p-10 rounded mt-10">
+          <h1 class="text-3xl font-bold mb-5">Widthdral</h1>
+          <h2 class="text-3xl">$<span id="widthdralAmount">0</span></h2>
+        </div>
+        <div class="bg-yellow-700 p-10 rounded mt-10">
+          <h1 class="text-3xl font-bold mb-5">Total</h1>
+          <h2 class="text-3xl">$<span id="totalAmount">1000</span></h2>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-4 mt-5 w-3/4 mx-auto mt-10">
+        <div class="bg-gray-400 p-5">
+          <h3 class="text-2xl font-bold">$ Enter Your Deposite Amount</h3>
+          <input
+            id="newDepoAmount"
+            class="block border-2 border-gray-400 rounded-sm px-2 mt-5"
+            type="text"
+            placeholder="Enter Deposite Amount"
+          />
+          <button
+            id="depoButton"
+            type="submit"
+            class="bg-yellow-400 px-2 py-2 rounded mt-5 mb-5 font-medium"
+          >
+            Deposite
+          </button>
+        </div>
+
+        <div class="bg-gray-400 p-5">
+          <h3 class="text-2xl font-bold">$ Enter Your Widthdral Amount</h3>
+          <input
+            id="newIdthralAmount"
+            class="block border-2 border-gray-400 rounded-sm px-2 mt-5"
+            type="text"
+            placeholder="Enter Widthdral Amount"
+          />
+          <button
+            id="widthdralButton"
+            type="submit"
+            class="bg-yellow-400 px-2 py-2 rounded mt-5 mb-5 font-medium"
+          >
+            Widthdral
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Js Script -->
+    <script src="bank.js"></script>
+  </body>
+</html>
